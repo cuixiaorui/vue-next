@@ -37,7 +37,7 @@ export const NOOP = () => {}
  */
 export const NO = () => false
 
-const onRE = /^on[^a-z]/
+const onRE = /^on[A-Z]/
 export const isOn = (key: string) => onRE.test(key)
 
 export const isModelListener = (key: string) => key.startsWith('onUpdate:')
